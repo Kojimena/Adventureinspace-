@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class personas extends Actor
 {
     public personas()
-    {
+    { //Constructor que se ejecuta cada vez al iniciar este objeto, creando su respectiva escala.
         GreenfootImage personas= getImage();
         personas.scale(86,50);
         
@@ -20,11 +20,5 @@ public class personas extends Actor
      */
     public void act()
     {}
-    public void choque(){
-        if (isTouching(ship.class)) {
-        removeTouching(ship.class);
-        //Greenfoot.playSoundç
-        getWorld().addObject(new ship(),Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber(10));
+
     }
-    }
-}

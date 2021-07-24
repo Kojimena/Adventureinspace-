@@ -15,37 +15,40 @@ public class space extends World
      */
     public space()
     {  
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        // Constructor creación del mundo con sus dimensiones.
         super(1240, 920, 1); 
         prepare();
     }
     public counter getCounter(){
+        // Uso de get para obtener la información del contador.
         return counter;
     }
     public void prepare(){
+        // Constructor para la preparación de los elementos de espacio.
         ship ship1= new ship();
         addObject(ship1,50,300);
-        crearmeteoros(10);
-        crearpersonas(8);
+        crearmeteoros(10); //se crean objetos de tipo meteoro
+        crearpersonas(10); //se crean objetos de tipo personas
         
         addObject(counter, 75,56);
     }
+    //recibe como parametro variable entera, no regresa valores
     public void crearmeteoros(int numero){
-    for (int i=0; i<numero;i++){
+    // Métodos para crear meteoros.
+        for (int i=0; i<numero;i++){
         meteoro r=new meteoro();
-        int x=Greenfoot.getRandomNumber(getWidth());
-        int y=Greenfoot.getRandomNumber(getHeight());
+        int x=Greenfoot.getRandomNumber(getWidth()); //getWidth nos da el valor del largo
+        int y=Greenfoot.getRandomNumber(getHeight());//getWidth nos da el valor del ancho
         addObject (r, x, y);
     }}
-    
     public void crearpersonas(int numero){
-    for (int i=0; i<numero;i++){
+    // Métodos para crear personas.Recibe como parametro variable entera, no regresa valores
+        for (int i=0; i<numero;i++){
         personas p=new personas();
         int x=Greenfoot.getRandomNumber(getWidth());
         int y=Greenfoot.getRandomNumber(getHeight());
         addObject (p, x, y);
     }}
-    
     public void act(){
     }
     }
