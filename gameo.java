@@ -24,7 +24,7 @@ public class gameo extends World
         Font f= new Font ("SansSerif",60);
         bg.setFont(f);
         bg.setColor(Color.RED);
-        String message = "GAME OVER";
+        String message = "GAME OVER, TRY AGAIN";
         bg.drawString(message, getWidth()/2 - message.length()*20,getHeight()/2);
         
     }

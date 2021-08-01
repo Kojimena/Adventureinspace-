@@ -13,8 +13,8 @@ public class YouWin extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public YouWin(){
-    setImage(new GreenfootImage("YOU WON!!!", 200, Color.BLUE, Color.WHITE));
-
+    setImage(new GreenfootImage("YOU WON!!!", 100, Color.BLUE, Color.WHITE));
+    Greenfoot.playSound("star-wars-theme-song.mp3");
     }
     public void act()
     {
