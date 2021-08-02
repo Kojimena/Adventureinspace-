@@ -14,7 +14,7 @@ public class YouWin extends Actor
      */
     public YouWin(){
     setImage(new GreenfootImage("YOU WON!!!", 100, Color.BLUE, Color.WHITE));
-    Greenfoot.playSound("star-wars-theme-song.mp3");
+    Greenfoot.playSound("ganar-ganador-.mp3");
     }
     public void act()
     {
